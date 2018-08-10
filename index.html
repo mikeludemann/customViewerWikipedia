@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Custom Viewer Wikipedia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./src/libs/script/jquery.js"></script>
+    <script src="./src/libs/script/popper.js"></script>
+    <script src="./src/libs/script/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="./src/libs/styles/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="./src/libs/styles/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./src/styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="navbar-brand">Wikipedia Viewer and Search</div>
+        </nav>
+    </header>
+    <section id="wikipediaSearch">
+        <div class="container-fluid" id="search">
+            <form action="#" method="get" id="searchForm">
+                <div class="row">
+                    <div id="search" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <input type="text" class="w-100" id="searchText" placeholder="Search">
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="search" class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        <input type="submit" class="btn btn-dark btn-lg" value="Search">
+                    </div>
+                    <div id="random" class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        <a href="https://de.wikipedia.org/wiki/Special:Random" target="_blank">
+                            <button type="button" class="btn btn-dark btn-lg">Random Search</button>
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="container-fluid">
+            <div class="row" id="result">
+                <!-- Elements with JavaScript (AJAX) -->
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row" id="noResult">
+                <!-- Elements with JavaScript (AJAX) -->
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark text-white">
+        <div>Copyright &copy; 2018 - today Mike Ludemann</div>
+    </footer>
+    <script src="./src/script/wikipedia.js"></script>
+</body>
+</html>
